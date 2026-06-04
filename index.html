@@ -362,8 +362,83 @@
       footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.8rem; text-align: center; }
     }
     @media (max-width: 480px) {
-      .cat-crews-grid { grid-template-columns: 1fr 1fr; }
+      body { overflow-x: hidden; }
+
+      /* NAV */
+      nav { padding: 0.7rem 1rem; }
+      .nav-btn { padding: 0.45rem 1rem; font-size: 0.75rem; letter-spacing: 1px; }
+
+      /* HERO */
+      .hero { grid-template-rows: auto 52vw; }
+      .hero-left { padding: 0 1.2rem 3rem; padding-top: 5rem; }
+      .hero-title { font-size: clamp(2.2rem, 10vw, 3rem); }
+      .hero-next-name { font-size: 0.85rem; }
+      .cd-num { font-size: 1.6rem; min-width: 2rem; }
+
+      /* TICKER */
+      .ticker-wrap { top: 56px; }
+
+      /* STATS */
       .stats-inner { grid-template-columns: 1fr 1fr; }
+      .stat-block { padding: 1.8rem 1.2rem; }
+      .stat-num { font-size: 3.5rem; }
+      .stat-block::before { font-size: 5rem; }
+
+      /* SPIRIT */
+      .spirit-quote { font-size: 1.1rem; }
+      .sw { font-size: 1.2rem; }
+
+      /* FEATURE */
+      .feature-title { font-size: 2rem; }
+      .feature-text { padding: 2.5rem 1.2rem; }
+
+      /* SECTION HEADINGS */
+      .sec-title { font-size: 2.2rem; letter-spacing: -0.3px; }
+      .races-head { padding: 3rem 1.2rem 1.5rem; gap: 1rem; }
+      .races-scroll { padding: 0 1.2rem; }
+      .races-dots { padding: 0.8rem 1.2rem 0; }
+
+      /* RACE CARDS — одна карточка на экран */
+      .race-card { min-width: calc(85vw); max-width: calc(85vw); }
+      .race-card.open { min-width: calc(85vw); max-width: calc(85vw); }
+      .card-results-inner { padding: 1rem 1.2rem 1.5rem; }
+      .cr-name { font-size: 0.65rem; }
+      .toggle-hint { padding: 0.5rem 1.4rem; }
+
+      /* RESULTS */
+      .res-head { padding: 3rem 1.2rem 1.5rem; }
+      .res-cat { grid-template-columns: 44px 1fr auto; padding: 0.8rem 1.2rem; }
+
+      /* STANDINGS */
+      .standings-section { padding: 3rem 1.2rem 3rem; }
+      .std-cats { grid-template-columns: 1fr; }
+
+      /* TEAMS */
+      .teams-head { padding: 3rem 1.2rem 1.5rem; }
+      .teams-cats { padding: 0 1.2rem 3rem; gap: 2rem; }
+      .cat-crews-grid { grid-template-columns: 1fr 1fr; }
+      .cat-block-name { font-size: 1.5rem; }
+      .crew-card { padding: 1.2rem 1rem; }
+      .crew-pts-val { font-size: 1.5rem; }
+      .crew-ghost { font-size: 4.5rem; }
+
+      /* CTA */
+      .cta-wrap { margin: 0 1.2rem 3rem; }
+      .cta-inner { padding: 2.5rem 1.5rem; }
+      .cta-title { font-size: 1.8rem; }
+      .cta-inner::before { display: none; }
+      .cta-btns { flex-direction: column; }
+      .btn-w, .btn-tr { text-align: center; padding: 0.8rem 1.5rem; }
+
+      /* FOOTER */
+      footer { padding: 1.5rem 1.2rem; }
+    }
+
+    @media (max-width: 360px) {
+      .cat-crews-grid { grid-template-columns: 1fr; }
+      .hero-title { font-size: 2rem; }
+      .race-card { min-width: calc(90vw); max-width: calc(90vw); }
+      .race-card.open { min-width: calc(90vw); max-width: calc(90vw); }
     }
   </style>
 </head>
